@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <h1>Herbal Recipes</h1>
+
+
+    <% @all_herbal_recipes.each  do  |h| %>
+        <h2><a href="/herbal_recipes/<%= herbal_recipe.id" </a><%= h.title %></h2>
+        <p><%= h.instructions %></p>
+    <% end %>
+</html>
