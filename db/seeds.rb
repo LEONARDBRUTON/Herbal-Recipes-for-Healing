@@ -11,14 +11,14 @@ Cilantro grows best in a cool, moist garden and will quickly bolt in hot weather
 1 Cucumber
 1 Lemon
 1/2 inch Ginger
-to taste Salt" ,instructions: "Steps
+to taste Salt" , instructions: "Steps:
 Take cucumber, Ginger & coriander in a grinder.
 
 Add salt & lemon juice in it.
 
 Add some water in it. Blend properly.
 
-Strain it. It's ready." ,user_id:1)
+Strain it. It's ready." , user_id:1)
 
 
 HerbalRecipe.create(title: "What does goldenseal treat?
@@ -28,14 +28,14 @@ pneumonia.
 just about any stomach or digestive condition.
 skin problems such as dandruff, ringworm, and eczema.
 eye infections.
-bladder infections." ,herb: "Goldenseal   is a plant that grows in North America. It has been used to help with digestion and treat colds. The root is dried and can be made into a tea. It can also be taken as a pill, powder, or extract." ,ingredents: "Goldenseal, Lemon, Honey" ,instructions: "Procedure:
+bladder infections." , herb: "Goldenseal:   It's a plant that grows in North America. It has been used to help with digestion and treat colds. The root is dried and can be made into a tea. It can also be taken as a pill, powder, or extract." , ingredents: "Ingredents: Goldenseal, Lemon, Honey" , instructions: "Procedure:
 Boil the water in a kettle.
 Put 1 teaspoon of goldenseal powdered root or leaves in a teacup.
 Pour the boiling water over the goldenseal and allow to steep for 15-20 minutes.
-Strain the tea and serve hot. Add lemon or raw organic honey, to taste." ,user_id:1)
+Strain the tea and serve hot. Add lemon or raw organic honey, to taste." , user_id:1)
 
 
-HerbalRecipe.create(title: "Immune Boosters-Elderberry Syrup with Echinacea and Goldenseal" ,ingredents: "Ingredients
+HerbalRecipe.create(title: "Immune Boosters-Elderberry Syrup with Echinacea and Goldenseal" , ingredents: "Ingredients:
 1 cup dried elderberries
 ¼ cup dried echinacea root
 1 teaspoon goldenseal root powder
@@ -43,7 +43,7 @@ HerbalRecipe.create(title: "Immune Boosters-Elderberry Syrup with Echinacea and 
 2 cinnamon sticks
 6 whole cloves
 1 cup raw honey
-4 cups water" ,instructions: "Instructions
+4 cups water" , instructions: "Instructions:
 Put the water, elderberries, and all of the herbs and spices into a pot and bring it to a rolling boil. 
 Turn down heat just a bit and let it boil for a good 45 minutes to 1 hour. 
 Remove from the heat, let cool down to lukewarm, and strain out the liquid from the berries and herbs.
@@ -56,13 +56,13 @@ Omit goldenseal (and substitutes) if this syrup will be given to children or pre
 Do not take for more than 1-2 weeks in a row. 
 Standard Syrup Dosage: 1 tablespoon every 4 hours for adults
 Nutrition
-Serving: 1Tablespoon | Calories: 14kcal" ,user_id:2)
+Serving: 1Tablespoon | Calories: 14kcal" , user_id:2)
 
 
-HerbalRecipe.create(title: "DIY Coconut Brown Sugar Scrub" ,ingredents: "Ingredients
+HerbalRecipe.create(title: "DIY Coconut Brown Sugar Scrub" , ingredents: "Ingredients:
 1 cup  brown sugar
 2 tbsp  fractionated coconut oil
-5-10 drops essential oils" ,instructions: "Instructions
+5-10 drops essential oils" , instructions: "Instructions:
 
 Add brown sugar to glass bowl.
 Add coconut oil and essential oils (optional) and stir gently.

@@ -3,8 +3,8 @@
     <h1>Herbal Recipes</h1>
 
 
-    <% @all_herbal_recipes.each  do  |h| %>
-        <h2><a href="/herbal_recipes/<%= herbal_recipe.id" </a><%= h.title %></h2>
-        <p><%= h.instructions %></p>
+    <% @herbal_recipes.each  do  |herbal_recipe| %>
+        <h2><a href="/herbal_recipes/<%= herbal_recipe.id%>" ></a><%= herbal_recipe.title %></h2>
+        <p><%= herbal_recipe.instructions %></p>
     <% end %>
 </html>
