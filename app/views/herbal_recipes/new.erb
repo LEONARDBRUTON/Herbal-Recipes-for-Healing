@@ -1,0 +1,23 @@
+<!DOC html>
+<html>
+ <h1>Create a Recipe</h1> 
+ <p><%=@error%></P>
+    <form action="/herbal_recipes" method="post">
+            <p>
+                <label> Title ~</label><br>
+                <input type="text" name="title"><br>
+            </p>
+            <p>
+                <label> Active Herbs Used ~</label><br>
+                <input type="text" name="herb"><br>
+            </p>
+            <p>
+                <label> Ingredents~</label><br>
+                <textarea name="ingredents"></textarea><br>
+            </p>
+            <p>
+                <label> Instructions ~</label><br>
+                <textarea name="instructions"></textarea><br>
+            </p>
+                <button type="submit">Submit</button>
+    </form>

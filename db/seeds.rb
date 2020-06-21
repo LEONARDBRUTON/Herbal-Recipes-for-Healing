@@ -2,9 +2,9 @@ User.create(username: "Tammy",password: "cc")
 User.create(username: "Aubrey",password: 'honeybee')
 
 
-HerbalRecipe.create(title: "Digestive, and Detox Issues" , herb: "Cilantro (Coriandrum sativum)  Cilantro boasts a unique flavor that people either love or hate. The leaves often garnish Mexican and Thai dishes. The seeds, known as coriander, are a prime ingredient in Indian curries.
+HerbalRecipe.create(title: "Digestive, and Detox Issues" , herb: "Cilantro (Coriandrum sativum) The leaves often garnish Mexican and Thai dishes. The seeds, known as coriander, are a prime ingredient in Indian curries.
 
-Few think of this plant as a medicinal herb, but researchTrusted Source shows it’s a powerful digestive aid and may be capable of removing heavy metals and other toxic agents from the body.
+It’s a powerful digestive aid and may be capable of removing heavy metals and other toxic agents from the body.
 
 Cilantro grows best in a cool, moist garden and will quickly bolt in hot weather. Look for slow bolt varieties from seed companies. Try this recipe for cleansing cilantro pesto. " ,ingredents: "Ingredients
 1 cup Coriander leaves
@@ -21,14 +21,16 @@ Add some water in it. Blend properly.
 Strain it. It's ready." , user_id:1)
 
 
-HerbalRecipe.create(title: "What does goldenseal treat?
-gonorrhea.
+HerbalRecipe.create(title: "What does goldenseal treat?",
+ herb: "Goldenseal:   It's a plant that grows in North America. 
+It has been used to help with digestion and treat colds. 
+It's also known to treat, (gonorrhea.
 malaria.
 pneumonia.
 just about any stomach or digestive condition.
 skin problems such as dandruff, ringworm, and eczema.
-eye infections.
-bladder infections." , herb: "Goldenseal:   It's a plant that grows in North America. It has been used to help with digestion and treat colds. The root is dried and can be made into a tea. It can also be taken as a pill, powder, or extract." , ingredents: "Ingredents: Goldenseal, Lemon, Honey" , instructions: "Procedure:
+eye infections,and also bladder infections.) 
+The root is dried and can be made into a tea. It can also be taken as a pill, powder, or extract." , ingredents: "Ingredents: Goldenseal, Lemon, Honey" , instructions: "Procedure:
 Boil the water in a kettle.
 Put 1 teaspoon of goldenseal powdered root or leaves in a teacup.
 Pour the boiling water over the goldenseal and allow to steep for 15-20 minutes.
