@@ -1,25 +1,26 @@
 <!DOC html>
 <html>
- <h1>Edit Recipe for <%= herbal_recipe.title</h1> 
+ <h1>Edit Recipe for <%= @herbal_recipe.title %></h1> 
  <p><%=@error%></P>
-    <form action="/herbal_recipes<%= herbal_recipe.id %>" method="post">
+    <form action="/herbal_recipes/<%= @herbal_recipe.id %>" method="post">
         <input type="hidden" NAME="_method" value="patch">
-        binding.pry
+        
             <p>
                 <label> Title ~</label><br>
-                <input type="text" name="herbal_recipes[title]" value="<%= herbal_recipe.title %>"><br>
+                <input type="text" name="herbal_recipe[title]" value="<%= @herbal_recipe.title %>"><br>
             </p>
             <p>
                 <label> Active Herbs Used ~</label><br>
-                <input type="text" name="herbal_recipes[herb]" value="<%= herbal_recipe.herb %>"><br>
+                <input type="text" name="herbal_recipe[herb]" value="<%= @herbal_recipe.herb %>"><br>
             </p>
             <p>
                 <label> Ingredents~</label><br>
-                <textarea name="herbal_recipe[ingredents]" value="<%= herbal_recipe.ingredents %>"></textarea><br>
+                <textarea name="herbal_recipe[ingredents]"><%= @herbal_recipe.ingredents %></textarea><br>
             </p>
             <p>
                 <label> Instructions ~</label><br>
-                <textarea name="herbal_recipe[instructions]" value="<%= herbal_recipe.instructions %>"></textarea><br>
+                <textarea name="herbal_recipe[instructions]"><%= @herbal_recipe.instructions %></textarea><br>
             </p>
-                <button type="submit">Submit Edit</button>
+                <button type="submit">Update</button>
     </form>
+</html>
