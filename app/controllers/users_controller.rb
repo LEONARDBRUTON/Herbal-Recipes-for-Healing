@@ -1,21 +1,31 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
     
 
-    get '/user' do 
-        erb :'/user/new'
+    get '/account' do 
+        erb :'/users/account'
     end
 
-    post '/user' do 
-        erb :'user'
+    post '/account' do
+        user = User.new(params)
+        if username.empty? || email.empty? || password.empty?
+            @error = "ERROR! You must enter text in all fields to submit!!" 
+            erb :'/users/account'
+        
+        else
+            user.save
+            session[:user_id] = user_id
+            redirect "/herbal_recipes"
+        end
+
     end
 
-
-    get '/user' do 
-        erb :'/user/index'
-    end
-
-
-    get '/user/:id' do 
-        erb :'/user/:id'
-    end
 end
+#     get '/users' do 
+#         erb :'/users/index'
+#     end
+
+
+#     get '/users/:id' do 
+#         erb :'/users/:id'
+#     end
+# end

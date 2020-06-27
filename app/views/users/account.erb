@@ -1,0 +1,29 @@
+
+<!DOC html>
+<html>
+ <h1>Create an Account</h1> 
+ <p><%=@error%></P>
+    <form action="/account" method="post">
+            <p>
+                <label> User Name</label><br>
+                <input type="text" name="username"><br>
+            </p>
+            <p>
+                <label>Email Address </label><br>
+                <input type="email" name="email"><br>
+            </p>
+            <p>
+                <label> Password</label><br>
+                <input type="password" method="password"><br>
+            </p>
+            <p>
+                <label>New Account</label><br>
+                <input type='submit' value='account'>
+            <%# <p>
+                <label> My Recipes</label><br>
+                <textarea name="users_recipes"></textarea><br>
+            </p> %>
+            
+                <%# <button type="submit">Submit</button> %>
+    </form>
+</html>

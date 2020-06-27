@@ -1,0 +1,23 @@
+<!DOC html>
+<html>
+ <h1>Login</h1> 
+ <p><%=@error%></P>
+    <form action="/login" method="post">
+            <p>
+                <label> User Name</label><br>
+                <input type="text" name="username"><br>
+            </p>
+            
+            <p>
+                <label> Password</label><br>
+                <input type="password" name="password"><br>
+            </p>
+            <p>
+                <input type="submit" value=Login><br>
+            </p>
+            
+            
+            
+                <%# <button type="submit">Submit</button> %>
+    </form>
+</html>

@@ -6,7 +6,7 @@ HerbalRecipe.create(title: "Digestive, and Detox Issues" , herb: "Cilantro (Cori
 
 It’s a powerful digestive aid and may be capable of removing heavy metals and other toxic agents from the body.
 
-Cilantro grows best in a cool, moist garden and will quickly bolt in hot weather. Look for slow bolt varieties from seed companies. Try this recipe for cleansing cilantro pesto. " ,ingredents: "Ingredients
+Cilantro grows best in a cool, moist garden and will quickly bolt in hot weather. Look for slow bolt varieties from seed companies. Try this recipe for cleansing cilantro pesto. ", ingredents: "Ingredients:
 1 cup Coriander leaves
 1 Cucumber
 1 Lemon
@@ -37,7 +37,7 @@ Pour the boiling water over the goldenseal and allow to steep for 15-20 minutes.
 Strain the tea and serve hot. Add lemon or raw organic honey, to taste." , user_id:1)
 
 
-HerbalRecipe.create(title: "Immune Boosters-Elderberry Syrup with Echinacea and Goldenseal" , ingredents: "Ingredients:
+HerbalRecipe.create(title: "Immune Boosters-Elderberry Syrup with Echinacea and Goldenseal" , herb: "Elderberrys, Echinacea, Goldenseal.", ingredents: "Ingredients:
 1 cup dried elderberries
 ¼ cup dried echinacea root
 1 teaspoon goldenseal root powder
@@ -61,7 +61,7 @@ Nutrition
 Serving: 1Tablespoon | Calories: 14kcal" , user_id:2)
 
 
-HerbalRecipe.create(title: "DIY Coconut Brown Sugar Scrub" , ingredents: "Ingredients:
+HerbalRecipe.create(title: "DIY Coconut Brown Sugar Scrub" , herb: " Cononut, Brown Sugar", ingredents: "Ingredients:
 1 cup  brown sugar
 2 tbsp  fractionated coconut oil
 5-10 drops essential oils" , instructions: "Instructions:

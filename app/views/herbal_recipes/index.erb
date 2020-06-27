@@ -5,11 +5,10 @@
 
 
 
-    <% @herbal_recipes.each  do  |herbal_recipe| %>
-        <h2><a href="/herbal_recipes<%= herbal_recipe.id%>"><%= herbal_recipe.title %></a></h2>
+        <% @herbal_recipes.each  do  |herbal_recipe| %>
+        <h2><a href="/herbal_recipes/<%= herbal_recipe.id %>"><%= herbal_recipe.title %></a></h2>
         <p><%= herbal_recipe.herb %></p> 
-        <p><%= herbal_recipe.ingredents %></p>
-        <p><%= herbal_recipe.instructions %></p>
-        <a href="/herbal_recipes/<%= recipe.id %>/edit">EDIT</a>
+        <a href="/herbal_recipes/<%= herbal_recipe.id %>/edit">EDIT</a>
     <% end %>
 </html>
+ 

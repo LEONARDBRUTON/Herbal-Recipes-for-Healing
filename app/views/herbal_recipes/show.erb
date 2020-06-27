@@ -1,4 +1,11 @@
 <!DOC html>
 <html>
     <h1><%= @herbal_recipe.title %></h1>
+    <h2><%= @herbal_recipe.herb %></h2>
+    <h2><%= @herbal_recipe.ingredents %></h2>
+    <h2><%= @herbal_recipe.instructions %></h2>
+    <form action="/herbal_recipe/><%= @herbal_recipe.id %>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit ">Delete Herbal Recipe</button>
+    </form>
 </html>
