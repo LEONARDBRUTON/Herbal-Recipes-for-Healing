@@ -13,4 +13,8 @@ class ApplicationController < Sinatra::Base
     erb :welcome
   end
 
+  # get "/users" do 
+  #   erb :/users/account
+  # end
+
 end

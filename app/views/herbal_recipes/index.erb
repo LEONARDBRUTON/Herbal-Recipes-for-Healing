@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
     <h1>Herbal Recipes</h1><br>
         <a href="/herbal_recipes/new">Add your own Recipes Here!</a>
 
 
 
         <% @herbal_recipes.each  do  |herbal_recipe| %>
-        <h2><a href="/herbal_recipes/<%= herbal_recipe.id %>"><%= herbal_recipe.title %></a></h2>
+        <a href="/herbal_recipes/<%= herbal_recipe.id %>"><h2><%= herbal_recipe.title %></h2></a>
         <p><%= herbal_recipe.herb %></p> 
         <a href="/herbal_recipes/<%= herbal_recipe.id %>/edit">EDIT</a>
     <% end %>

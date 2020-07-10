@@ -1,23 +1,35 @@
 class UsersController < ApplicationController
     
 
-    get '/account' do 
+    get '/users/new' do 
         erb :'/users/account'
     end
 
-    post '/account' do
-        user = User.new(params)
-        if username.empty? || email.empty? || password.empty?
-            @error = "ERROR! You must enter text in all fields to submit!!" 
-            erb :'/users/account'
-        
-        else
-            user.save
-            session[:user_id] = user_id
-            redirect "/herbal_recipes"
-        end
+    post '/users' do
+        # binding.pry
 
+        @user = User.new(username: params[:username],password: params[:password])
+         if @user.save
+            redirect '/users/login'
+         else
+            erb :"/users/account"
+         end
+
+    
+        # if user.save
+        #     session[:user_id] = user.id
+        #     redirect '/herbal_recipes'
+        # else
+        #     @error = "ERROR!, Invalid Entry!"
+        #     erb :'/users/account'
+        # end
     end
+
+    get '/users/:id' do
+        @user = User.find(params[:id])
+        erb :'/users/creaters'
+    end
+
 
 end
 #     get '/users' do 

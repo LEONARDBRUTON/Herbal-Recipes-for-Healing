@@ -5,7 +5,6 @@ class HerbalRecipes < ActiveRecord::Migration
       t.text :herb
       t.string :ingredents
       t.text :instructions
-      t.string :image
       t.integer :user_id
     end
   end

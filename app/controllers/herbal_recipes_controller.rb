@@ -12,8 +12,8 @@ class HerbalRecipesController < ApplicationController
 
     post '/herbal_recipes' do 
         herbal_recipe = HerbalRecipe.new(params)
-           if !herbal_recipes.title.empty? && !herbal_recipes.herb.empty? && !herbal_recipes.ingredents.empty? && !herbal_recipes.instructions.empty?
-              herbal_recipes.save
+           if !herbal_recipe.title.empty? && !herbal_recipe.herb.empty? && !herbal_recipe.ingredents.empty? && !herbal_recipe.instructions.empty?
+              herbal_recipe.save
               redirect'/herbal_recipes'
             else
               @error = "ERROR! Please enter text in all fields to submit!!"
@@ -24,8 +24,7 @@ class HerbalRecipesController < ApplicationController
         #READ
         #Index
         #Get request to '/herbal_recipes'
-
-         #Show
+        #Show
         #Get request to '/herba_recipes/:id'
 
     get '/herbal_recipes' do
@@ -34,16 +33,16 @@ class HerbalRecipesController < ApplicationController
     end
 
     get '/herbal_recipes/:id' do
-        @herbal_recipe = HerbalRecipe.find_by(params[:id])
+        @herbal_recipe = HerbalRecipe.find_by(id: params[:id])
+        #binding.pry
             erb :'/herbal_recipes/show'
     end
 
         # UPDATE
-            #     Edit
-            #     make a get request to '/herbal_recipes/:id/edit'
-
-            #     Update
-            #     make a patch request to '/herbal_recipes/:id'
+            #Edit
+            #make a get request to '/herbal_recipes/:id/edit'
+            #Update
+            #make a patch request to '/herbal_recipes/:id'
 
     get '/herbal_recipes/:id/edit' do
         @herbal_recipe = HerbalRecipe.find(params[:id])
@@ -52,8 +51,8 @@ class HerbalRecipesController < ApplicationController
 
     patch '/herbal_recipes/:id' do
         @herbal_recipe = HerbalRecipe.find(params[:id])
-
-            if !params["herbal_recipe"]["title"].empty? && !params["herbal_recipe"]["herb"].empty? && !params["herbal_recipe"]["ingredents"].empty? && !params["instructions"].empty?
+            if !@herbal_recipe.title.empty? && !@herbal_recipe.herb.empty? && !@herbal_recipe.ingredents.empty? && !@herbal_recipe.instructions.empty?
+                # if !params["herbal_recipe"]["title"].empty? && !params["herbal_recipe"]["herb"].empty? && !params["herbal_recipe"]["ingredents"].empty? && !params["instructions"].empty?
                 @herbal_recipe.update(params["herbal_recipe"])
                 redirect'/herbal_recipes/#{params[:id]}'
             else
@@ -61,9 +60,8 @@ class HerbalRecipesController < ApplicationController
                 erb :'/herbal_recipes/edit'
             end
     end
-
         #DESTROY
-            #make a delete request to '/herbal_recipes/:id'
+        #make a delete request to '/herbal_recipes/:id'
 
     delete '/herbal_recipes/:id' do
         @herbal_recipe = HerbalRecipe.find(params[:id])

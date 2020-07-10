@@ -18,14 +18,12 @@ ActiveRecord::Schema.define(version: 20200610223927) do
     t.text    "herb"
     t.string  "ingredents"
     t.text    "instructions"
-    t.string  "image"
     t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string  "username"
-    t.string  "password_digest"
-    t.boolean "paid"
+    t.string "username"
+    t.string "password_digest"
   end
 
 end

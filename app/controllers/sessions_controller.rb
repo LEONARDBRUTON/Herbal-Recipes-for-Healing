@@ -8,13 +8,14 @@ class SessionsController < ApplicationController
         @error = 'ERROR!, All fields required!'
         erb :'/users/login'
       else
-            if user = User.find_by(username: params['username'], password: params['password'])
-                session[:user_id] = user_id 
-                redirect "/herbal_recipes"
-            else
-                @error = 'Error! Account not found!'
-                erb :'/users/login'
-            end
+            user = User.find_by(username: params['username']) 
+                if  user && user.authenicate(password: params['password'])
+                    session[:user_id] = user.id 
+                    redirect "/herbal_recipes"
+                else
+                    @error = 'Error! Account not found!'
+                    erb :'/users/login'
+                end
         end
     end
 
